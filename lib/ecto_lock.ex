@@ -123,7 +123,7 @@ defmodule EctoLock do
   end
 
   @doc """
-  Obtains a shared transaction-level advisory xact_lock, returning :ok if it was aquired, or :error if it wasn't possible
+  Obtains a transaction-level advisory xact_lock, returning :ok if it was aquired, or :error if it wasn't possible
   """
   @spec try_advisory_xact_lock(repo, key, Keyword.t()) :: result
   def try_advisory_xact_lock(repo, key, opts \\ []) do
